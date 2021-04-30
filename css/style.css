@@ -362,6 +362,11 @@ h1 {
 }
 
 .elipse {
+  background-image: url(../img/elipse.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -388,7 +393,7 @@ h1 {
 .contacts {
   text-align: left;
   position: absolute;
-  top: 600px;
+  top: 750px;
 }
 
 .contacts div {
@@ -430,10 +435,10 @@ h1 {
 
 .links a svg {
   fill: white;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  width: 65px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 90px;
 }
 
 .links a:hover svg {
@@ -446,7 +451,7 @@ h1 {
   h1 {
     font-size: 70px;
     line-height: 90px;
-    padding-top: 210px;
+    padding-top: 230px;
   }
 
   .logo {
@@ -454,7 +459,7 @@ h1 {
   }
 
   .contacts {
-    top: 450px;
+    top: 500px;
   }
 
   .links {
@@ -480,13 +485,13 @@ h1 {
   h1 {
     font-size: 42px;
     line-height: 51px;
-    padding-top: 280px;
+    padding-top: 250px;
   }
 
   .elipse {
+    background-image: url(../img/elipse_phone.png);
     position: absolute;
     left: 50%;
-    top: 150px;
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
@@ -549,6 +554,12 @@ h1 {
   }
 }
 
+@media (max-width: 413px) {
+  h1 {
+    padding-top: 300px;
+  }
+}
+
 @media (max-width: 376px) {
   .links {
     top: 460px;
@@ -563,4 +574,32 @@ h1 {
   }
 }
 
+@media (max-height: 700px) {
+  h1 {
+    padding-top: 220px;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    overflow: visible;
+  }
+
+  .main {
+    height: 130vh;
+  }
+
+  h1 {
+    padding-top: 260px;
+    font-size: 34px;
+  }
+}
+
 .webp .main { background-image: url(../img/bg.webp); }
+
+.webp .elipse { background-image: url(../img/elipse.webp); }
+
+@media (max-width: 767px) {
+
+  .webp .elipse { background-image: url(../img/elipse_phone.webp); }
+}
